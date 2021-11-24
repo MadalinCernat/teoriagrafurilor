@@ -3,6 +3,8 @@
 }
 html{
 	scroll-behavior: smooth;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 /* Body and nav*/
 body {
