@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 * {
 	box-sizing: border-box;
 }
@@ -12,7 +13,8 @@ body {
 	font-size: 2.5vmax;
 	line-height: 1.6;
 	margin: 0;
-	background-color: #FFF;
+	background-color: #eee;
+	color: #111;
 }
 ul {
   margin: 0;
@@ -25,6 +27,7 @@ header a {
 	color: #39bad8;
 	border-color: #0e0f18;
 	border-width: 1px;
+	font-family: 'Inter', sans-serif;
 }
 
 .logo {
@@ -229,4 +232,10 @@ footer{
   }
 h1{
 	margin: 0;
+}
+
+.lista{
+	list-style-type: circle;
+	margin-left: 1.5em;
+	margin-right:1.5em;
 }

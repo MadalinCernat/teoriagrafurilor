@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Teoria Grafurilor - Mădălin Cernat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="graph.png">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="index.html">Teoria Grafurilor</a></h1>
+        <ul class="main-nav">
+            <li><a href="#">Terminologie</a></li>
+            <li><a href="#">Formule</a></li>
+            <li><a href="#">Proprietăți</a></li>
+            <li><a href="#">Reprezentare</a></li>
+        </ul>
+    </header>
+    <main style="margin: 2em; text-align: justify;">
+        <p><i>Definiție: Un <strong>graf</strong> este o pereche ordonată de mulțimi, notată G = (X, U), unde: X={ x | x ∈ X} este <strong>mulțimea nodurilor</strong> (vârfurilor), iar U = {(x,y)| x, y ∈ X}, mulțimea muchiilor.</i></p>
+        <ul class="lista">
+            <li><strong>nod/vârf</strong> = element al mulțimii X ce poate fi reprezentat în plan printr-un punct (cerc etc.) eventual numerotat</li>
+            <li><strong>muchie</strong> = pereche neordonată de noduri ce poate fi reprezentată în plan printr-un segment de dreaptă/arc</li>
+            <li><strong>adiacență</strong> = proprietate a două noduri de a fi unite prin muchie; dacă [x, y] ∈ U, spunem că nodurile x și y sunt adiacente</li>
+            <li><strong>incidență</strong> = proprietatea unei muchii de a uni două noduri; dacă [x, y] ∈ U, spunem că muchia este incidentă cu nodurile x și y</li>
+            <li><strong>gradul nodului x</strong> = numărul de muchii incidente cu nodul x, notat cu d(x)</li>
+        </ul>
+        <p><i>Propoziție: În orice graf neorientat cu n noduri și m muchii are loc egalitatea: <strong>2m = d(x<sub>1</sub>) + d(x<sub>2</sub>) + ... + d(x<sub>n</sub>)</strong></i></p>
+
+        <ul class="lista">
+            <li><strong>lanț</strong> = succesiune de noduri cu proprietatea că oricare două noduri consecutive din lanț sunt adiacente
+            <ul class="lista">
+                <li>lanț compus = lanț în care muchiile se pot repeta</li>
+                <li>lanț simplu = lanț în care fiecare muchie apare o singură dată, dar nodurile se pot repeta</li>
+                <li>lanț elementar = lanț în care nodurile sunt distincte</li>
+            </ul>
+            </li>
+            <li><strong>ciclu</strong> = lanț simplu în care primul nod coincide cu ultimul</li>
+            <li><strong>lungimea unui lanț/ciclu</strong> = numărul de muchii din care este format</li>
+            <li><strong>graf parțial</strong> = graf care se obține din graful inițial prin eliminarea unor muchii, nu și a nodurilor</li>
+            <li><strong>subgraf</strong> = graf care se obține din graful inițial prin eliminarea unor noduri și a tuturor muchiilor incidente cu acesta; nu pot fi eliminate alte muchii decât cele incidente cu nodurile eliminate</li>
+        </ul>
+    </main>
+    <footer>
+        &copy 2021 Mădălin Cernat
+        <!-- <button onclick="topFunction()" id="scrollToTopButton"><img src="scroll-top-arrow.jpg" id="scrollTopButtonImg"></img></button> -->
+    </footer>
+</body>
+</html>
