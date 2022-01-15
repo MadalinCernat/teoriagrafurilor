@@ -167,7 +167,7 @@ footer{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-80%);
+	transform: translate(-50%,-50%);
 	color: #fff;
 	-webkit-text-stroke: 0.2px black;
 	white-space: nowrap;
@@ -227,3 +227,6 @@ footer{
 	  list-style-type:disc;
 	  list-style-position: inside;
   }
+h1{
+	margin: 0;
+}
