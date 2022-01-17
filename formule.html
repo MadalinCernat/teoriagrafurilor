@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Teoria Grafurilor - Mădălin Cernat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="graph.png">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="index.html">Teoria Grafurilor</a></h1>
+        <ul class="main-nav">
+            <li><a href="terminologie.html">Terminologie</a></li>
+            <li><a href="formule.html">Formule</a></li>
+            <li><a href="#">Probleme</a></li>
+            <li><a href="#">Reprezentare</a></li>
+        </ul>
+    </header>
+    <main style="margin: 2em; text-align: justify;">
+        <h1 class="titlu">Formule</h1>
+        <hr>
+        <h2>Formule grafuri neorientate:</h2>
+        <p><i>Propoziție: În orice graf neorientat cu n noduri și m muchii are loc egalitatea: <strong>2m = d(x<sub>1</sub>) + d(x<sub>2</sub>) + ... + d(x<sub>n</sub>)</strong></i></p>
+        <ul class="lista">
+            <li>Numărul de muchii într-un graf neorientat complet =  <strong>n(n-1)/2</strong></li>
+            <li>Numărul grafurilor neorientate cu n vârfuri este = <strong>2<sup>n(n-1)/2</sup> = 2<sup>C<sub>n</sub><sup>2</sup></strong></li>
+            <li>Numărul grafurilor parțiale peste un graf cu m muchii = <strong>2<sup>m</sup></strong></li>
+            <li>Numărul muchiilor într-un graf bipartit în care card(A) = p și card(B) = q, este <strong>p * q</strong></li>
+        </ul>
+
+        <h2>Formule grafuri orientate:</h2>
+        <ul class="lista">
+            <li>Numărul de arce într-un graf plin cu n noduri = <strong>n(n-1)</strong></li>
+            <li>Numărul de grafuri orientate cu n noduri = <strong>2<sup>n(n-1)</sup> = 4<sup>C<sub>n</sub><sup>2</sup></sup></strong></li>
+            <li>Graful complet orientat nu este unic, iar numărul de arce m respectă relația: <strong>n(n-1)/2 ≤ m ≤ n(n-1)</strong></li>
+            <li>Graful turneu nu este unic, iar numărul de arce m respectă relația <strong>m = n(n-1)/2</strong></li>
+        </ul>
+    </main>
+    <footer>
+        &copy 2021 Mădălin Cernat
+        <!-- <button onclick="topFunction()" id="scrollToTopButton"><img src="scroll-top-arrow.jpg" id="scrollTopButtonImg"></img></button> -->
+    </footer>
+</body>
+
+</html>
