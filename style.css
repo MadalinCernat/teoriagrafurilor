@@ -31,6 +31,12 @@ ul {
 	margin-right: 1.5em;
 }
 
+.lista-ordonata{
+	list-style-type: lower-alpha;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
 .titlu{
 	text-align: center;
 }
@@ -242,7 +248,9 @@ footer{
 		margin-left: 0.75em;
 		margin-right: 0.75em;
 	}
+
   }
+  
   @media screen and (max-width: 1025px)
   {
 	#main-page-img{
@@ -260,3 +268,43 @@ footer{
 h1{
 	margin: 0;
 }
+
+.container {
+	width: 100%;
+	margin: auto;
+ }
+ 
+ .wrapper{
+	width: 100%;
+ }
+ 
+ .box{
+	vertical-align: top;
+	display: inline-block;
+	box-sizing: border-box;
+ }
+ 
+ .one {
+	width: 49%;
+ }
+ 
+ .two { 
+	width: 49%;
+ }
+ @media screen and (max-width: 768px) {
+	.box{
+	   display: block;
+	}
+ 
+	.one {
+	   width: 100%;
+	}
+ 
+	.two {
+	   width: 100%;
+	}
+	.two img{
+		width:100%;
+		height: auto;
+	}
+ }
