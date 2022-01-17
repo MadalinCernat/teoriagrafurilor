@@ -13,26 +13,22 @@
     <header class="header">
         <h1 class="logo"><a href="index.html">Teoria Grafurilor</a></h1>
         <ul class="main-nav">
-            <li><a href="#">Terminologie</a></li>
-            <li><a href="#">Formule</a></li>
-            <li><a href="#">Proprietăți</a></li>
+            <li><a href="terminologie.html">Terminologie</a></li>
+            <li><a href="formule.html">Formule</a></li>
+            <li><a href="#">Probleme</a></li>
             <li><a href="#">Reprezentare</a></li>
         </ul>
     </header>
     <main style="margin: 2em; text-align: justify;">
         <h1 class="titlu">Terminologie</h1>
         <hr>
-        <p><i>Definiție: Un <strong>graf</strong> este o pereche ordonată de mulțimi, notată G = (X, U), unde: X={ x | x ∈ X} este <strong>mulțimea nodurilor</strong> (vârfurilor), iar U = {(x,y)| x, y ∈ X}, mulțimea muchiilor.</i></p>
+        <h2>Grafuri neorientate:</h2>
         <ul class="lista">
             <li><strong>nod/vârf</strong> = element al mulțimii X ce poate fi reprezentat în plan printr-un punct (cerc etc.) eventual numerotat</li>
             <li><strong>muchie</strong> = pereche neordonată de noduri ce poate fi reprezentată în plan printr-un segment de dreaptă/arc</li>
             <li><strong>adiacență</strong> = proprietate a două noduri de a fi unite prin muchie; dacă [x, y] ∈ U, spunem că nodurile x și y sunt adiacente</li>
             <li><strong>incidență</strong> = proprietatea unei muchii de a uni două noduri; dacă [x, y] ∈ U, spunem că muchia este incidentă cu nodurile x și y</li>
             <li><strong>gradul nodului x</strong> = numărul de muchii incidente cu nodul x, notat cu d(x)</li>
-        </ul>
-        <p><i>Propoziție: În orice graf neorientat cu n noduri și m muchii are loc egalitatea: <strong>2m = d(x<sub>1</sub>) + d(x<sub>2</sub>) + ... + d(x<sub>n</sub>)</strong></i></p>
-
-        <ul class="lista">
             <li><strong>lanț</strong> = succesiune de noduri cu proprietatea că oricare două noduri consecutive din lanț sunt adiacente
             <ul class="lista">
                 <li>lanț compus = lanț în care muchiile se pot repeta</li>
@@ -44,6 +40,28 @@
             <li><strong>lungimea unui lanț/ciclu</strong> = numărul de muchii din care este format</li>
             <li><strong>graf parțial</strong> = graf care se obține din graful inițial prin eliminarea unor muchii, nu și a nodurilor</li>
             <li><strong>subgraf</strong> = graf care se obține din graful inițial prin eliminarea unor noduri și a tuturor muchiilor incidente cu acesta; nu pot fi eliminate alte muchii decât cele incidente cu nodurile eliminate</li>
+            <li><strong>graf regulat</strong> = graf în care toate nodurile au grade egale</li>
+            <li><strong>graf complet</strong> = graf în care oricare două noduri distincte sunt adiacente</li>
+            <li><strong>graf bipartit</strong> = graf în care mulțimea de noduri X poate fi partiționată în două submulțimi disjuncte A, B, nevide, a căror reuniune este A ∪ B = X, astfel încât orice muchie din graf unește un nod din A cu un nod din B (nu există în graf muchii între nodurile aceleiași submulțimi, iar nodurile izolate pot aparține oricăreia dintre submulțimile A și B)</li>
+            <li><strong>graf aciclic</strong> = graf în care nu există niciun ciclu</li>
+            <li><strong>graf conex</strong> = oricare ar fi două noduri distincte, există cel puțin un lanț între ele</li>
+            <li><strong>componentă conexă</strong> = un subgraf conex și maximal în raport cu această proprietate (nu există lanț între un nod din subgraf și un nod care nu aparține subgrafului)</li>
+            <li><strong>ciclu hamiltonian</strong> = ciclu elementar care trece prin toate vârfurile grafului</li>
+            <li><strong>graf hamiltonian</strong> = graf care conține cel puțin un ciclu hamiltonian</li>
+            <li><strong>ciclu eulerian</strong> = ciclu care trece prin toate muchiile grafului</li>
+            <li><strong>graf eulerian</strong> = graf care conține un ciclu eulerian</li>
+        </ul>
+        <h2>Grafuri orientate:</h2>
+        <ul class="lista">
+            <li><strong>arc</strong> = pereche ordonată de noduri ce poate fi reprezentată în plan printr-o săgeată orientată</li>
+            <li><strong>gradul interior al nodului x</strong> = d<sup>-</sup>(x) = numărul de arce care intră în nodul x (x = extremitate finală)</li>
+            <li><strong>gradul extern al nodului x</strong> = numărul de arce care pleacă din nodul x (x = extremitate inițială)</li>
+            <li><strong>drum</strong> = succesiune de noduri cu proprietatea că oricare două noduri consecutive sunt adiacente (arcele păstrează aceeași orientare)</li>
+            <li><strong>circuit</strong> = drum în care primul nod coincide cu ultimul</li>
+            <li><strong>lungimea unui drum/circuit</strong> = numărul de arce din care este format</li>
+            <li><strong>graf plin</strong> = un graf orientat în care ∀ x ≠ y, cu x,y ∈ X, ∃(x, y) și ∃(y, x) (există arc dus-întors)</li>
+            <li><strong>graf orientat tare conex</strong> = oricare ar fi două noduri distincte x și y, există drum dus-întors de la x la y (există un circuit, nu neapărat elementar, care trece prin toate arcele grafului orientat)</li>
+            <li><strong>componentă tare conexă a unui graf orientat</strong> = un subgraf tare conex și maximal în raport cu această proprietate (nu există drum dus-întors între un nod din subgraf și un nod care nu aparține subgrafului)</li>
         </ul>
     </main>
     <footer>

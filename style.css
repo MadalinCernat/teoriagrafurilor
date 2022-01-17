@@ -2,6 +2,9 @@
 * {
 	box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6{
+	color: #111;
+}
 html{
 	scroll-behavior: smooth;
 	overflow-y: scroll;
@@ -20,6 +23,20 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.lista{
+	list-style-type: circle;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
+.titlu{
+	text-align: center;
+}
+
+hr{
+	margin-bottom: 2em;
 }
 
 header a {
@@ -221,6 +238,10 @@ footer{
 	#main-page-title{
 		font-size: 1.5em;
 	}
+	.lista{
+		margin-left: 0.75em;
+		margin-right: 0.75em;
+	}
   }
   @media screen and (max-width: 1025px)
   {
@@ -238,18 +259,4 @@ footer{
   }
 h1{
 	margin: 0;
-}
-
-.lista{
-	list-style-type: circle;
-	margin-left: 1.5em;
-	margin-right: 1.5em;
-}
-
-.titlu{
-	text-align: center;
-}
-
-hr{
-	margin-bottom: 2em;
 }
