@@ -256,7 +256,7 @@ footer{
 		height: 400px;
 	}
 	#main-page-title{
-		font-size: 2em;
+		font-size: 2rem;
 	}
   }
 
@@ -297,15 +297,15 @@ h1{
  }
 
  .cerinta{
-	padding-right: 1em;
+	padding-right: 1rem;
  }
  @media screen and (max-width: 768px) {
 	.box{
 		display: block;
 	 }
-  
 	 .one {
 		width: 100%;
+		margin-bottom: 1rem;
 	 }
   
 	 .two {
