@@ -287,6 +287,11 @@ h1{
 	width: 49%;
  }
  
+ .one img{
+	 width: 100%;
+	 max-width: 600px;
+ }
+
  .two { 
 	width: 49%;
  }
@@ -295,6 +300,8 @@ h1{
 	 width:100%;
 	 max-width: 600px;
  }
+
+
 
  .cerinta{
 	padding-right: 1rem;
@@ -307,7 +314,10 @@ h1{
 		width: 100%;
 		margin-bottom: 1rem;
 	 }
-  
+	 .one img{
+		 width:100%;
+		 height: auto;
+	 }
 	 .two {
 		width: 100%;
 	 }
@@ -321,4 +331,8 @@ h1{
 	 .lista-ordonata{
 		 margin:0;
 	 }
+ }
+
+ .descriere-imagine{
+	 text-align: center;
  }
