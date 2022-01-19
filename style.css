@@ -336,3 +336,16 @@ h1{
  .descriere-imagine{
 	 text-align: center;
  }
+
+ .videoclip{
+	 background-color: #ddd;
+	 padding: 1rem;
+	 margin-top: 1rem;
+ }
+
+
+ .videoclip iframe{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+ }
