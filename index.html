@@ -57,6 +57,21 @@
                 </div>
             </div>
         </section>
+
+        <section id="main-page-generator">
+            <select id="selector" class="graf-selector">
+                <option value="graf-bipartit">Graf bipartit</option>
+                <option value="graf-bipartit-complet">Graf bipartit complet</option>
+                <option value="graf-eulerian">Graf eulerian</option>
+                <option value="graf-hamiltonian">Graf hamiltonian</option>
+                <option value="graf-regulat">Graf regulat</option>
+                <option value="graf-neorientat-complet">Graf neorientat complet</option>
+            </select>
+            <button id="buton-generare" class="buton" onclick="genereaza()">Generează</button>
+            <div id="imagine-generata">
+
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -64,13 +79,7 @@
         <!-- <button onclick="topFunction()" id="scrollToTopButton"><img src="scroll-top-arrow.jpg" id="scrollTopButtonImg"></img></button> -->
     </footer>
 
-
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

@@ -178,11 +178,11 @@ footer{
 
 	background-image:
 	linear-gradient(to top, rgba(2,0,36,0.3), rgba(57,186,216,0.7), rgba(0,255,210,0.8)),
-    url('https://raw.githubusercontent.com/MadalinCernat/teoriagrafurilor/main/img-2.jpg');
+    url('https://raw.githubusercontent.com/MadalinCernat/teoriagrafurilor/main/imagini/img-2.jpg');
 
 	background-image: 
 	-webkit-linear-gradient(to bottom, rgba(2,0,36,0.3), rgba(57,186,216,0.7), rgba(0,255,210,0.8), 
-	url('https://raw.githubusercontent.com/MadalinCernat/teoriagrafurilor/main/img-2.jpg'));
+	url('https://raw.githubusercontent.com/MadalinCernat/teoriagrafurilor/main/imagini/img-2.jpg'));
 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -230,9 +230,10 @@ footer{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	text-align: center;
 	background-color: #f1f1f1;
-	height: 340px;
+	min-height: 340px;
+	max-height: 420px;
 	padding: 10px;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
   }
   
   @media screen and (max-width: 600px) {
@@ -334,21 +335,60 @@ h1{
 	 .lista-ordonata{
 		 margin:0;
 	 }
+	 #imagine-generata img{
+		 width: 100%;
+		 height: auto;
+		 margin: 1rem 0 !important;
+	 }
+	 #imagine-generata{
+		margin: 0;
+	 }
  }
 
  .descriere-imagine{
 	 text-align: center;
  }
 
- .videoclip{
-	 background-color: #ddd;
-	 padding: 1rem;
-	 margin-top: 1rem;
+ .graf-selector, .buton{
+	 position: relative;
+	 left: 50%;
+	 right:50%;
+	 transform: translate(-50%, -50%);
+	 padding: 0.2rem;
+	 margin: 2rem 0 0 0;
  }
+ .buton{
+	display:block;
+	margin: 0.5rem 0 0 0;
+	background-color: #212338;
+	color: #fff;
+	font-family: 'OpenSans', 'Quicksand', 'Poppins', 'Arial', sans-serif;
+	padding: 0.3rem 0.7rem;
+	border: none;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 1rem;
+}
+.buton:hover{
+	cursor: pointer;
+	background-color: #28aac7;
+}
 
+.graf-selector{
+	border-radius: 5px;
+	font-family: 'OpenSans', 'Quicksand', 'Poppins', 'Arial', sans-serif;
+	text-align: center;
+	font-size: 1rem;
+}
 
- .videoclip iframe{
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
- }
+.graf-selector:hover{
+	cursor: pointer;
+}
+
+#imagine-generata{
+	margin: 0 5rem;
+}
+
+#imagine-generata img{
+	margin: 2rem;
+}
