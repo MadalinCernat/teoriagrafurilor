@@ -7,7 +7,7 @@ function genereaza(){
         output = selectElement.value;
         var divImagine = document.getElementById('imagine-generata');
         var imagine = document.createElement('img');
-        imagine.src = `/imagini/${output}.png`;
+        imagine.src = `imagini/${output}.png`;
         imagine.width = '200';
         imagine.height = '200';
         imagine.id = `imagine-${i}`
